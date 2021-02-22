@@ -16,7 +16,9 @@ function App() {
   window.addEventListener("orientationchange", (event) => {
     setScreenWidth(window.screen.width);
     setScreenHeight(window.screen.height);
-    setInnerWidth(window.innerWidth);
+    requestAnimationFrame(() => {
+      setInnerWidth(window.innerWidth);
+    });
   })
 
   return (
