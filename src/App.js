@@ -18,7 +18,7 @@ function App() {
     setScreenHeight(window.screen.height);
     requestAnimationFrame(() => {
       setInnerWidth(window.innerWidth);
-      alert('here');
+      alert(window.innerWidth);
     });
   })
 
