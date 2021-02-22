@@ -1,11 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect, useState } from 'react'
+
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
+  useEffect(() => {
+    setScreenWidth(window.screen.width);
+    setScreenHeight(window.screen.height);
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        Your screen:<br />
+        Width: {screenWidth}<br />
+        Height: {screenHeight}<br />
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,7 +28,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );
