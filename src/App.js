@@ -11,6 +11,11 @@ function App() {
     setScreenHeight(window.screen.height);
   }, [])
 
+  window.addEventListener("orientationchange", (event) => {
+    setScreenWidth(window.screen.width);
+    setScreenHeight(window.screen.height);
+  })
+
   return (
     <div className="App">
       <header className="App-header">
