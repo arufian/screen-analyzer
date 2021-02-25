@@ -28,7 +28,6 @@ function App() {
         Your screen:<br />
         Width: {screenWidth} pixel<br />
         Height: {screenHeight} pixel<br />
-        inner Width: {innerWidth} pixel<br />
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
